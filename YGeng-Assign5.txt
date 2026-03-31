@@ -1,0 +1,94 @@
+-- 1) How many containers of antibiotics are currently available?
+quantityOnHand
+--------------------------------------------------
+100
+
+-- 2) Which volunteer(s), if any, have phone numbers that do not start with the number 2 and whose last name is not Jones.
+volunteerName
+--------------------------------------------------
+Gene Lewin
+
+-- 3) Which volunteer(s) are working on transporting tasks?
+volunteerName
+--------------------------------------------------
+George Brewer
+
+-- 4) Which task(s) have yet to be assigned to any volunteers?
+taskDescription
+--------------------------------------------------
+Prepare 100 food packages
+Take packages to the warehouse
+
+-- 5) Which type(s) of package contain some kind of bottle?
+packageTypeName
+--------------------------------------------------
+food and water
+
+-- 6) Which items, if any, are not in any packages?
+itemDescription
+--------------------------------------------------
+bottle of antibiotics
+bottle of aspirin
+flashlight
+pack of bandages
+
+-- 7) Which task(s) are assigned to volunteer(s) that live in New Jersey (NJ)?
+taskDescription
+--------------------------------------------------
+Prepare 20 children's packages
+Prepare 100 water packages
+Prepare 5,000 packages
+
+-- 8) Which volunteers began their assignments in the first half of 2021?
+volunteerName
+--------------------------------------------------
+Joan Simmons
+Chris Jordan
+
+-- 9) Which volunteers have been assigned to tasks that include packing spam?
+volunteerName
+--------------------------------------------------
+Julie White
+Gerry Banks
+
+-- 10) Which item(s) (if any) have a total value of exactly $100 in one package?
+itemDescription
+--------------------------------------------------
+Baby formula
+
+-- 11) How many volunteers are assigned to tasks with each different status?
+taskStatusName | volunteerCount
+--------------------------------------------------
+open | 4
+closed | 3
+ongoing | 2
+pending | 1
+
+-- 12) Which task creates the heaviest set of packages and what is the weight?
+taskCode | totalWeight
+--------------------------------------------------
+106 | 308.0
+
+-- 13) How many tasks are there that do not have a type of "packing"?
+COUNT(*)
+--------------------------------------------------
+3
+
+-- 14) Of those items that have been packed, which item (or items) were touched by fewer than 3 volunteers?
+itemDescription
+--------------------------------------------------
+can of spam
+dried fruit
+men's coat
+sleeping bag
+tent
+women's coat
+
+-- 15) Which packages have a total value of more than 100?
+packageId | totalValue
+--------------------------------------------------
+6 | 150.0
+2 | 151.0
+4 | 350.0
+10 | 750.0
+5 | 1420.0
